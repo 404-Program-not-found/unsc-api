@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-13T16:39:12Z",
+  "source": {
+    "page": "List of members of the United Nations Security Council",
+    "revid": 1363842260
+  },
+  "year": 1950,
+  "members": [
+    {
+      "name": "Republic of China (Taiwan)",
+      "iso3": "TWN",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "French Fourth Republic",
+      "iso3": "FRA",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Union of Soviet Socialist Republics",
+      "iso3": "SUN",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "United Kingdom",
+      "iso3": "GBR",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "United States",
+      "iso3": "USA",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Ecuador",
+      "iso3": "ECU",
+      "permanent": false,
+      "regional_group": "latin_american_caribbean",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Republic of Cuba",
+      "iso3": "CUB",
+      "permanent": false,
+      "regional_group": "latin_american_caribbean",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "India",
+      "iso3": "IND",
+      "permanent": false,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Federal People's Republic of Yugoslavia",
+      "iso3": "YUG",
+      "permanent": false,
+      "regional_group": "asia_pacific",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Kingdom of Egypt",
+      "iso3": "EGY",
+      "permanent": false,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Norway",
+      "iso3": "NOR",
+      "permanent": false,
+      "regional_group": "western_european_others",
+      "term_start": null,
+      "term_end": null
+    }
+  ]
+}

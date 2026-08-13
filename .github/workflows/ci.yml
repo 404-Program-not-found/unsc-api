@@ -1,0 +1,31 @@
+name: CI
+
+# The daily job commits nothing but docs/, so paths-ignore keeps its pushes
+# from re-running a suite that cannot have changed. GitHub skips the workflow
+# only when *every* changed file matches, so one touched source file is enough.
+on:
+  push:
+    paths-ignore:
+      - "docs/**"
+  pull_request:
+    paths-ignore:
+      - "docs/**"
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - run: pip install -r requirements.txt -r requirements-dev.txt
+
+      - run: python -m pytest -q

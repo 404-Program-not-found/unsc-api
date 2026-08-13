@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-13T16:39:12Z",
+  "source": {
+    "page": "List of members of the United Nations Security Council",
+    "revid": 1363842260
+  },
+  "year": 1975,
+  "members": [
+    {
+      "name": "China",
+      "iso3": "CHN",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "French Fifth Republic",
+      "iso3": "FRA",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Union of Soviet Socialist Republics",
+      "iso3": "SUN",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "United Kingdom",
+      "iso3": "GBR",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "United States",
+      "iso3": "USA",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Tanzania",
+      "iso3": "TZA",
+      "permanent": false,
+      "regional_group": "african",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Mauritania",
+      "iso3": "MRT",
+      "permanent": false,
+      "regional_group": "african",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Cameroon",
+      "iso3": "CMR",
+      "permanent": false,
+      "regional_group": "african",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Ba'athist Iraq",
+      "iso3": "IRQ",
+      "permanent": false,
+      "regional_group": "asia_pacific",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Japan",
+      "iso3": "JPN",
+      "permanent": false,
+      "regional_group": "asia_pacific",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Costa Rica",
+      "iso3": "CRI",
+      "permanent": false,
+      "regional_group": "latin_american_caribbean",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Guyana",
+      "iso3": "GUY",
+      "permanent": false,
+      "regional_group": "latin_american_caribbean",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Italy",
+      "iso3": "ITA",
+      "permanent": false,
+      "regional_group": "western_european_others",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Sweden",
+      "iso3": "SWE",
+      "permanent": false,
+      "regional_group": "western_european_others",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Byelorussian Soviet Socialist Republic",
+      "iso3": "BLR",
+      "permanent": false,
+      "regional_group": "eastern_european",
+      "term_start": null,
+      "term_end": null
+    }
+  ]
+}

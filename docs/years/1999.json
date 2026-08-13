@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-13T16:39:12Z",
+  "source": {
+    "page": "List of members of the United Nations Security Council",
+    "revid": 1363842260
+  },
+  "year": 1999,
+  "members": [
+    {
+      "name": "China",
+      "iso3": "CHN",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "French Fifth Republic",
+      "iso3": "FRA",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Russia",
+      "iso3": "RUS",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "United Kingdom",
+      "iso3": "GBR",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "United States",
+      "iso3": "USA",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Namibia",
+      "iso3": "NAM",
+      "permanent": false,
+      "regional_group": "african",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "The Gambia",
+      "iso3": "GMB",
+      "permanent": false,
+      "regional_group": "african",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Gabon",
+      "iso3": "GAB",
+      "permanent": false,
+      "regional_group": "african",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Bahrain",
+      "iso3": "BHR",
+      "permanent": false,
+      "regional_group": "asia_pacific",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Malaysia",
+      "iso3": "MYS",
+      "permanent": false,
+      "regional_group": "asia_pacific",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Brazil",
+      "iso3": "BRA",
+      "permanent": false,
+      "regional_group": "latin_american_caribbean",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Argentina",
+      "iso3": "ARG",
+      "permanent": false,
+      "regional_group": "latin_american_caribbean",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Canada",
+      "iso3": "CAN",
+      "permanent": false,
+      "regional_group": "western_european_others",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Netherlands",
+      "iso3": "NLD",
+      "permanent": false,
+      "regional_group": "western_european_others",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Slovenia",
+      "iso3": "SVN",
+      "permanent": false,
+      "regional_group": "eastern_european",
+      "term_start": null,
+      "term_end": null
+    }
+  ]
+}

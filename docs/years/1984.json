@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-13T16:39:12Z",
+  "source": {
+    "page": "List of members of the United Nations Security Council",
+    "revid": 1363842260
+  },
+  "year": 1984,
+  "members": [
+    {
+      "name": "China",
+      "iso3": "CHN",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "French Fifth Republic",
+      "iso3": "FRA",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Union of Soviet Socialist Republics",
+      "iso3": "SUN",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "United Kingdom",
+      "iso3": "GBR",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "United States",
+      "iso3": "USA",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Zimbabwe",
+      "iso3": "ZWE",
+      "permanent": false,
+      "regional_group": "african",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Burkina Faso",
+      "iso3": "BFA",
+      "permanent": false,
+      "regional_group": "african",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Egypt",
+      "iso3": "EGY",
+      "permanent": false,
+      "regional_group": "african",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "India",
+      "iso3": "IND",
+      "permanent": false,
+      "regional_group": "asia_pacific",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Pakistan",
+      "iso3": "PAK",
+      "permanent": false,
+      "regional_group": "asia_pacific",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Peru",
+      "iso3": "PER",
+      "permanent": false,
+      "regional_group": "latin_american_caribbean",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Nicaragua",
+      "iso3": "NIC",
+      "permanent": false,
+      "regional_group": "latin_american_caribbean",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Malta",
+      "iso3": "MLT",
+      "permanent": false,
+      "regional_group": "western_european_others",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Netherlands",
+      "iso3": "NLD",
+      "permanent": false,
+      "regional_group": "western_european_others",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Ukrainian Soviet Socialist Republic",
+      "iso3": "UKR",
+      "permanent": false,
+      "regional_group": "eastern_european",
+      "term_start": null,
+      "term_end": null
+    }
+  ]
+}

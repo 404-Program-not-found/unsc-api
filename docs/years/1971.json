@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-13T16:39:12Z",
+  "source": {
+    "page": "List of members of the United Nations Security Council",
+    "revid": 1363842260
+  },
+  "year": 1971,
+  "members": [
+    {
+      "name": "China",
+      "iso3": "CHN",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "French Fifth Republic",
+      "iso3": "FRA",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Union of Soviet Socialist Republics",
+      "iso3": "SUN",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "United Kingdom",
+      "iso3": "GBR",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "United States",
+      "iso3": "USA",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Somali Democratic Republic",
+      "iso3": "SOM",
+      "permanent": false,
+      "regional_group": "african",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Sierra Leone",
+      "iso3": "SLE",
+      "permanent": false,
+      "regional_group": "african",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Burundi",
+      "iso3": "BDI",
+      "permanent": false,
+      "regional_group": "african",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Syria",
+      "iso3": "SYR",
+      "permanent": false,
+      "regional_group": "asia_pacific",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Japan",
+      "iso3": "JPN",
+      "permanent": false,
+      "regional_group": "asia_pacific",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Nicaragua",
+      "iso3": "NIC",
+      "permanent": false,
+      "regional_group": "latin_american_caribbean",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Argentina",
+      "iso3": "ARG",
+      "permanent": false,
+      "regional_group": "latin_american_caribbean",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Belgium",
+      "iso3": "BEL",
+      "permanent": false,
+      "regional_group": "western_european_others",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Italy",
+      "iso3": "ITA",
+      "permanent": false,
+      "regional_group": "western_european_others",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Polish People's Republic",
+      "iso3": "POL",
+      "permanent": false,
+      "regional_group": "eastern_european",
+      "term_start": null,
+      "term_end": null
+    }
+  ]
+}

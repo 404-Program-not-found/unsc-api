@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-13T16:41:54Z",
+  "source": {
+    "page": "List of members of the United Nations Security Council",
+    "revid": 1363842260
+  },
+  "year": 2026,
+  "members": [
+    {
+      "name": "China",
+      "iso3": "CHN",
+      "permanent": true,
+      "regional_group": "asia_pacific",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "France",
+      "iso3": "FRA",
+      "permanent": true,
+      "regional_group": "western_european_others",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Russia",
+      "iso3": "RUS",
+      "permanent": true,
+      "regional_group": "eastern_european",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "United Kingdom",
+      "iso3": "GBR",
+      "permanent": true,
+      "regional_group": "western_european_others",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "United States",
+      "iso3": "USA",
+      "permanent": true,
+      "regional_group": "western_european_others",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Bahrain",
+      "iso3": "BHR",
+      "permanent": false,
+      "regional_group": "asia_pacific",
+      "term_start": 2026,
+      "term_end": 2027
+    },
+    {
+      "name": "Colombia",
+      "iso3": "COL",
+      "permanent": false,
+      "regional_group": "latin_american_caribbean",
+      "term_start": 2026,
+      "term_end": 2027
+    },
+    {
+      "name": "Democratic Republic of the Congo",
+      "iso3": "COD",
+      "permanent": false,
+      "regional_group": "african",
+      "term_start": 2026,
+      "term_end": 2027
+    },
+    {
+      "name": "Denmark",
+      "iso3": "DNK",
+      "permanent": false,
+      "regional_group": "western_european_others",
+      "term_start": 2025,
+      "term_end": 2026
+    },
+    {
+      "name": "Greece",
+      "iso3": "GRC",
+      "permanent": false,
+      "regional_group": "western_european_others",
+      "term_start": 2025,
+      "term_end": 2026
+    },
+    {
+      "name": "Latvia",
+      "iso3": "LVA",
+      "permanent": false,
+      "regional_group": "eastern_european",
+      "term_start": 2026,
+      "term_end": 2027
+    },
+    {
+      "name": "Liberia",
+      "iso3": "LBR",
+      "permanent": false,
+      "regional_group": "african",
+      "term_start": 2026,
+      "term_end": 2027
+    },
+    {
+      "name": "Pakistan",
+      "iso3": "PAK",
+      "permanent": false,
+      "regional_group": "asia_pacific",
+      "term_start": 2025,
+      "term_end": 2026
+    },
+    {
+      "name": "Panama",
+      "iso3": "PAN",
+      "permanent": false,
+      "regional_group": "latin_american_caribbean",
+      "term_start": 2025,
+      "term_end": 2026
+    },
+    {
+      "name": "Somalia",
+      "iso3": "SOM",
+      "permanent": false,
+      "regional_group": "african",
+      "term_start": 2025,
+      "term_end": 2026
+    }
+  ]
+}

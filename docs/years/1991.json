@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-13T16:39:12Z",
+  "source": {
+    "page": "List of members of the United Nations Security Council",
+    "revid": 1363842260
+  },
+  "year": 1991,
+  "members": [
+    {
+      "name": "China",
+      "iso3": "CHN",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "French Fifth Republic",
+      "iso3": "FRA",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Russia",
+      "iso3": "RUS",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "United Kingdom",
+      "iso3": "GBR",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "United States",
+      "iso3": "USA",
+      "permanent": true,
+      "regional_group": null,
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Zimbabwe",
+      "iso3": "ZWE",
+      "permanent": false,
+      "regional_group": "african",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Ivory Coast",
+      "iso3": "CIV",
+      "permanent": false,
+      "regional_group": "african",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Zaire",
+      "iso3": "COD",
+      "permanent": false,
+      "regional_group": "african",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Yemen",
+      "iso3": "YEM",
+      "permanent": false,
+      "regional_group": "asia_pacific",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "India",
+      "iso3": "IND",
+      "permanent": false,
+      "regional_group": "asia_pacific",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Cuba",
+      "iso3": "CUB",
+      "permanent": false,
+      "regional_group": "latin_american_caribbean",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Ecuador",
+      "iso3": "ECU",
+      "permanent": false,
+      "regional_group": "latin_american_caribbean",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Austria",
+      "iso3": "AUT",
+      "permanent": false,
+      "regional_group": "western_european_others",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Belgium",
+      "iso3": "BEL",
+      "permanent": false,
+      "regional_group": "western_european_others",
+      "term_start": null,
+      "term_end": null
+    },
+    {
+      "name": "Romania",
+      "iso3": "ROU",
+      "permanent": false,
+      "regional_group": "eastern_european",
+      "term_start": null,
+      "term_end": null
+    }
+  ]
+}

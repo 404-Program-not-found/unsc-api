@@ -1,0 +1,55 @@
+name: Update membership
+
+on:
+  schedule:
+    # Off-the-hour: on-the-hour runs contend with everyone else's crons.
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - run: pip install -r requirements.txt -r requirements-dev.txt
+
+      # The parser is the product: never publish from a build that cannot
+      # reproduce the committed fixtures.
+      - run: python -m pytest -q
+
+      - run: python update.py
+        env:
+          UNSC_API_USER_AGENT: ${{ vars.UNSC_API_USER_AGENT }}
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          if git diff --cached --quiet; then
+            echo "no change"
+          else
+            git commit -m "chore: update UNSC membership"
+            git push
+          fi
+
+      # Council membership changes twice a year, so this job commits nothing on
+      # ~360 days out of 365 and the repo reads as inactive. GitHub disables
+      # scheduled workflows after 60 days without a commit, so without this the
+      # cron reliably dies. API mode avoids padding history with dummy commits.
+      - uses: gautamkrishnar/keepalive-workflow@v2
+        with:
+          use_api: true

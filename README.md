@@ -6,10 +6,10 @@ published as static JSON on GitHub Pages.
 ## Endpoints
 
 ```txt
-/current      the 15 sitting members
-/incoming     elected for the next year, not yet seated (empty until the June election)
-/years/YYYY   composition for that year, 1946–present
-/index.json   manifest: available years, schema version, generated_at
+/index.json         the 15 sitting members
+/incoming           elected for the next year, not yet seated (empty until the June election)
+/years/YYYY         composition for that year, 1946–present
+/years/index.json   manifest: available years, schema version, generated_at
 ```
 
 Example Payload:

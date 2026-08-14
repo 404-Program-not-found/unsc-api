@@ -68,7 +68,7 @@ def main() -> int:
             problems.append(problem)
             continue
         publisher.write_payload(
-            f"years/{year}.json", Payload(members, year, source, generated_at)
+            f"years/{year}", Payload(members, year, source, generated_at)
         )
         written += 1
 

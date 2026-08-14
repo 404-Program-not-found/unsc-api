@@ -45,7 +45,12 @@ class Payload:
 
 
 class Publisher:
-    """Writes payloads under `docs/`, which GitHub Pages serves verbatim."""
+    """Writes payloads under `docs/`, which GitHub Pages serves verbatim.
+
+    Files carry no `.json` suffix, so the published paths are `/current` and
+    `/years/2026`. Pages then serves them as `application/octet-stream`, and
+    Cloudflare rewrites the header to `application/json` at the edge.
+    """
 
     def __init__(self, root: Path | None = None) -> None:
         # Resolved at call time so tests can redirect DOCS to a tmp_path.
@@ -62,6 +67,10 @@ class Publisher:
         return self.write(relative, payload.as_json())
 
     def write_index(self, **extra: Any) -> Path:
-        years = sorted(int(p.stem) for p in (self.root / "years").glob("*.json"))
+        # Filtered on isdigit rather than globbed: docs/ also holds .nojekyll
+        # and CNAME, and neither survives an int().
+        years = sorted(
+            int(p.name) for p in (self.root / "years").iterdir() if p.name.isdigit()
+        )
         index = {"schema_version": SCHEMA_VERSION, "years": years, **extra}
-        return self.write("index.json", index)
+        return self.write("index", index)

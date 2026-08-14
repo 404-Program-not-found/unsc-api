@@ -47,11 +47,10 @@ class Payload:
 class Publisher:
     """Writes payloads under `docs/`, which GitHub Pages serves verbatim.
 
-    Year payloads carry no `.json` suffix, so the published paths are
-    `/incoming` and `/years/2026`. Pages then serves them as
-    `application/octet-stream`, and Cloudflare rewrites the header at the edge.
-    The two `index.json` files keep theirs — a bare `index` collides with
-    directory-index resolution — and Pages types them correctly on its own.
+    Every payload is an `index.json` inside its own directory, so the published
+    paths are `/`, `/incoming/` and `/years/2026/`. Pages resolves a directory
+    to its `index.json` and types it `application/json` unaided; a request
+    without the trailing slash 301s to add it.
     """
 
     def __init__(self, root: Path | None = None) -> None:
@@ -69,10 +68,12 @@ class Publisher:
         return self.write(relative, payload.as_json())
 
     def write_index(self, **extra: Any) -> Path:
-        # Filtered on isdigit rather than globbed: the directory also holds
-        # this manifest, and `index.json` does not survive an int().
+        # Each year is a directory; the sibling this manifest itself lives in
+        # is a file, so is_dir() excludes it without special-casing the name.
         years = sorted(
-            int(p.name) for p in (self.root / "years").iterdir() if p.name.isdigit()
+            int(p.name)
+            for p in (self.root / "years").iterdir()
+            if p.is_dir() and p.name.isdigit()
         )
         index = {"schema_version": SCHEMA_VERSION, "years": years, **extra}
         return self.write("years/index.json", index)

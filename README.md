@@ -6,10 +6,10 @@ published as static JSON on GitHub Pages.
 ## Endpoints
 
 ```txt
-/index.json         the 15 sitting members
-/incoming           elected for the next year, not yet seated (empty until the June election)
-/years/YYYY         composition for that year, 1946–present
-/years/index.json   manifest: available years, schema version, generated_at
+/            the 15 sitting members
+/incoming/   elected for the next year, not yet seated (empty until the June election)
+/years/YYYY/ composition for that year, 1946–present
+/years/      manifest: available years, schema version, generated_at
 ```
 
 Example Payload:
@@ -57,37 +57,27 @@ Set up `UNSC_API_USER_AGENT` as an env variable before running
 ## Deployment
 
 Pages serves `docs/` from `main` (Settings → Pages → *Deploy from a branch*,
-folder `/docs`). Cloudflare fronts it to set the JSON content type.
+folder `/docs`). Nothing else is required: Pages resolves each directory to its
+`index.json` and sends `application/json` on its own, so there is no CDN rule
+to keep in sync and no host-specific configuration in the repo.
 
-Order matters when first attaching the domain — GitHub cannot issue its
-certificate through Cloudflare's proxy, so the record starts unproxied:
+For a custom domain, order matters — GitHub cannot issue its certificate
+through a proxy, so the record starts unproxied:
 
-1. Cloudflare DNS: `CNAME  unsc → <user>.github.io`, **DNS only** (grey cloud).
-   A `CNAME`, never an `A` record; those are for apex domains.
+1. DNS: `CNAME  unsc → <user>.github.io`, **DNS only** if your provider
+   proxies. A `CNAME`, never an `A` record; those are for apex domains.
 2. GitHub → Settings → Pages → Custom domain. Wait for the certificate, then
    tick **Enforce HTTPS**. This writes `docs/CNAME`, which the daily job's
    `git add docs` preserves — if it ever vanishes, the domain silently unsets.
-3. Switch the record to **Proxied** (orange cloud) and set SSL/TLS to
-   **Full (strict)**. Flexible causes a redirect loop against Pages.
-4. Rules → Transform Rules → Modify Response Header, filtered on
-   `http.host eq "unsc.example.com" and not http.request.uri.path contains "."`:
+3. If you then proxy the record, set SSL/TLS to **Full (strict)**. Flexible
+   causes a redirect loop against Pages.
 
-   | Action | Header | Value |
-   | --- | --- | --- |
-   | Set static | `content-type` | `application/json` |
-   | Set static | `access-control-allow-origin` | `*` |
-
-Verify with
-`curl -sSI https://unsc.example.com/current | grep -iE 'content-type|cf-ray'`.
-A missing `cf-ray` means the record is grey-clouded and no rule fired.
-
-Only step 4 is load-bearing for correctness: without it every endpoint returns
-`application/octet-stream` and browsers download rather than display. The path
-filter keeps a future `index.html` from being labelled JSON.
+Verify with `curl -sSI https://unsc.example.com/ | grep -i content-type`,
+expecting `application/json; charset=utf-8`.
 
 ## Known limitation
 
 The permanent-members table is keyed by the year a seat changed hands, so
-mid-year transitions land on their start year. `years/1971` shows China and
-`years/1991` shows Russia, although the handovers fell in October and December
+mid-year transitions land on their start year. `/years/1971/` shows China and
+`/years/1991/` shows Russia, although the handovers fell in October and December
 respectively. This follows the source's own granularity.

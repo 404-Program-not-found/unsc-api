@@ -38,9 +38,9 @@ def main() -> int:
 
     current = Payload(members, year, source, generated_at)
     publisher.write_payload("index.json", current)
-    publisher.write_payload(f"years/{year}", current)
+    publisher.write_payload(f"years/{year}/index.json", current)
     publisher.write_payload(
-        "incoming", Payload(incoming, year + 1, source, generated_at)
+        "incoming/index.json", Payload(incoming, year + 1, source, generated_at)
     )
     publisher.write_index(generated_at=generated_at, current_year=year)
 

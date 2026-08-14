@@ -9,7 +9,7 @@ published as static JSON on GitHub Pages.
 /current      the 15 sitting members
 /incoming     elected for the next year, not yet seated (empty until the June election)
 /years/YYYY   composition for that year, 1946–present
-/index        manifest: available years, schema version, generated_at
+/index.json   manifest: available years, schema version, generated_at
 ```
 
 Example Payload:

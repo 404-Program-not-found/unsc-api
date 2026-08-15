@@ -8,7 +8,6 @@ on:
 
 permissions:
   contents: write
-  actions: write # for the keepalive step
 
 concurrency:
   group: update
@@ -46,14 +45,3 @@ jobs:
             git commit -m "chore: update UNSC membership"
             git push
           fi
-
-      # Council membership changes twice a year, so this job commits nothing on
-      # ~360 days out of 365 and the repo reads as inactive. GitHub disables
-      # scheduled workflows after 60 days without a commit, so without this the
-      # cron reliably dies. Re-enabling resets that clock without dummy commits.
-      - name: Keep the schedule alive
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh api --method PUT \
-            "repos/${{ github.repository }}/actions/workflows/update.yml/enable"

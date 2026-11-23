@@ -1,4 +1,6 @@
 requests>=2.32
 mwparserfromhell>=0.6.6
 country_converter>=1.3
+# country_converter 1.3.2 fails with TypeError on pandas 3.1+ (NaN in ISO2 regexes)
+pandas<3.1
 pycountry>=24.6.1
